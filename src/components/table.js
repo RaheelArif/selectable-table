@@ -14,17 +14,35 @@ class Table extends Component {
         [false, false, false, false, false, false, false, false, false, false, false, false , false, false, false, false, false, false, false, false, false, false, false, false],
         [false, false, false, false, false, false, false, false, false, false, false, false , false, false, false, false, false, false, false, false, false, false, false, false],
 
-    ]
+    ],
+  
+      Sunday: [],
+      Monday: [],
+      Tuesday: [],
+      Wednesday: [],
+      Thursday: [],
+      Friday: [],
+      Saturday: [],
+  
   };
- change = () => {
-   console.log(this.state.cells[1][2])
- }
+getData =(e) => {
+  e.preventDefault()
+  if (this.state.cells[1][1] === true){ this.setState({ Sunday: [...this.state.Sunday, "00"] })}
+  if (this.state.cells[1][2] === true){ this.setState({ Sunday: [...this.state.Sunday, "01"] })}
+  if (this.state.cells[1][3] === true){ this.setState({ Sunday: [...this.state.Sunday, "02"] })}
+  if (this.state.cells[1][4] === true){ this.setState({ Sunday: [...this.state.Sunday, "03"] })}
+  if (this.state.cells[1][5] === true){ this.setState({ Sunday: [...this.state.Sunday, "04"] })}
+  console.log(this.state)
+}
   render = () =>
+  <div>
+
+
     <TableDragSelect
       value={this.state.cells}
       onChange={cells => this.setState({ cells })}
     >
-        <tr onClick={this.change}>
+        <tr>
             <th disabled className="h-Day1">Day</th>
             <th disabled className="h-row">00</th>
             <th disabled className="h-row">01</th>
@@ -52,8 +70,8 @@ class Table extends Component {
         </tr>
       <tr>
         <td disabled className="c-day">Sunday</td>
-        < td className="my-td" />
-        < td className="my-td" />
+        < td id="sunday00" name="seleted"  className="my-td" />
+        < td id="sunday00" name="seleted" className="my-td" />
         < td className="my-td" />
         < td className="my-td" />
         < td className="my-td" />
@@ -234,6 +252,8 @@ class Table extends Component {
         < td className="my-td" />
         
       </tr>
-    </TableDragSelect>;
+    </TableDragSelect>
+    <button onClick={this.getData}>get data</button>
+    </div>
 }
 export default Table;

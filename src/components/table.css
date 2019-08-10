@@ -1,0 +1,59 @@
+
+.table-drag-select td{
+    border: 1px solid rgb(58, 58, 58);
+  }
+  .my-td{
+    background-color: rgb(29, 31, 32) !important; 
+  }
+  .table-drag-select td.cell-being-selected {
+    background-color: rgb(240, 251, 255) !important;
+  }
+  
+  
+  .cell-selected{
+    background-color: rgb(177, 14, 15) !important;
+  }
+  .h-row{
+    color: rgb(225, 223, 220);
+    background-color: rgb(26, 28, 29) !important;
+    border-left: none !important;
+    border-right: none !important;
+    text-align: left !important;
+    padding-left: 10px !important;
+    font-weight: bold;
+  }
+  
+  .h-Day1{
+    color: rgb(225, 223, 220);
+    width: 150px;
+    background-color: rgb(26, 28, 29) !important;
+    border-right: none !important;
+    text-align: left !important;
+    padding-left: 10px !important;
+    font-weight: bold;
+  
+  }
+  .h-Day{
+    color: rgb(225, 223, 220);
+    background-color: rgb(26, 28, 29) !important;
+    border-right: none !important;
+    text-align: left !important;
+    padding-left: 10px !important;
+    font-weight: bold;
+  
+  }
+  .c-day{
+    color: rgb(225, 223, 220);
+    background-color: rgb(26, 28, 29) !important;
+    border-right: none !important;
+    text-align: left !important;
+    padding-left: 10px !important;
+  }
+  .c-day2{
+    color: rgb(225, 223, 220);
+    background-color: rgb(34, 36, 37) !important;
+    border-right: none !important;
+    text-align: left !important;
+    padding-left: 10px !important;
+  }
+  

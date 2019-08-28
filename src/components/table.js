@@ -121,13 +121,13 @@ class Table extends Component {
           break;
       }
     }
-
   }
 
   render() {
     console.log(this.state)
+    
     return (
-      <div>
+      <div style={{width:"90%"}}>
 
 
         <TableDragSelect
